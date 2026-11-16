@@ -7,6 +7,7 @@ COPY package*.json ./
 
 RUN npm ci --omit=dev
 
+# Stage 2: Produção
 FROM node:24-alpine AS production
 
 WORKDIR /app
